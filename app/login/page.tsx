@@ -6,12 +6,13 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white shadow-xl rounded-2xl flex w-[800px] h-[600px] overflow-hidden">
         {/* Lado da imagem */}
-        <div className="w-1/2 bg-green-500 relative">
+        <div className="w-1/2 bg-green-400 flex items-center justify-center p-8">
           <Image
             src="/GestEstudosLogo.png"
             alt="Logo"
-            fill
-            className="object-contain p-16"
+            width={300}
+            height={300}
+            className="object-contain"
           />
         </div>
 
@@ -23,13 +24,13 @@ export default function Login() {
             <input
               type="email"
               placeholder="Email"
-              className="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-400"
             />
 
             <input
               type="password"
               placeholder="Senha"
-              className="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
 
             <button
