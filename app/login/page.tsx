@@ -7,13 +7,15 @@ export default function Login() {
       <div className="bg-white shadow-xl rounded-2xl flex w-[800px] h-[600px] overflow-hidden">
         {/* Lado da imagem */}
         <div className="w-1/2 bg-green-400 flex items-center justify-center p-8">
-          <Image
-            src="/GestEstudosLogo.png"
-            alt="Logo"
-            width={300}
-            height={300}
-            className="object-contain"
-          />
+          <Link href="/">
+            <Image
+              src="/GestEstudosLogo.png"
+              alt="Logo"
+              width={300}
+              height={300}
+              className="object-contain"
+            />
+          </Link>
         </div>
 
         {/* Lado do formulário */}
