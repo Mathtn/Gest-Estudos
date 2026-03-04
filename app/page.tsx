@@ -1,7 +1,9 @@
+import Navbar from "@/components/layout/navbar";
+
 export default function Home() {
   return (
-    <div>
-      <h1>GestEstudos</h1>
-    </div>
+    <main className="">
+      <Navbar />
+    </main>
   );
 }
