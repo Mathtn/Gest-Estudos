@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "GestEstudos",
-  description: "GestEstudos, o AppWeb ideal para você gerir seus estudos!",
+  description: "O AppWeb ideal para você gerir seus estudos!",
 };
 
 export default function RootLayout({
@@ -25,7 +25,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
+        // Adicionei 'min-h-screen' para o background preencher tudo sempre
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 min-h-screen text-gray-900`}
       >
         {children}
       </body>
