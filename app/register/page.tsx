@@ -41,15 +41,25 @@ export default function Register() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <div className="bg-white shadow-xl rounded-2xl flex w-full max-w-[800px] h-auto md:h-[600px] overflow-hidden flex-col md:flex-row relative">
-        
-        <Link 
-          href="/" 
+      <div className="bg-white shadow-xl rounded-2xl flex w-full max-w-200 h-auto md:h-150 overflow-hidden flex-col md:flex-row relative">
+        <Link
+          href="/"
           className="absolute top-4 right-4 text-gray-300 hover:text-gray-500 transition-colors z-10"
           title="Voltar para o início"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </Link>
 
@@ -110,7 +120,10 @@ export default function Register() {
 
           <p className="mt-6 text-sm text-gray-600 text-center">
             Já possui conta?{" "}
-            <Link href="/login" className="text-blue-600 font-semibold hover:underline">
+            <Link
+              href="/login"
+              className="text-blue-600 font-semibold hover:underline"
+            >
               Fazer login
             </Link>
           </p>
