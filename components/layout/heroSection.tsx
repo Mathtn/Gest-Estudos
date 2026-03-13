@@ -45,8 +45,8 @@ export default function Hero() {
           <Image
             src="/Hero.png"
             alt="Estudando"
-            width={520}
-            height={420}
+            width={620}
+            height={520}
             className="relative drop-shadow-2xl"
             priority
           />
