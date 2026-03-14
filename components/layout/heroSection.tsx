@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative w-full overflow-hidden bg-linear-to-br from-green-600 via-teal-500 to-blue-600 text-white pt-28 pb-16">
+    <section className="relative w-full overflow-hidden bg-gradient-to-br from-green-600 via-teal-500 to-blue-600 text-white pt-28 pb-16">
       <div className="absolute top-0 left-0 w-96 h-96 bg-white/20 blur-[120px] rounded-full"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12">
@@ -32,9 +32,12 @@ export default function Hero() {
               Começar Agora
             </Link>
 
-            <button className="border border-white px-7 py-3 rounded-xl hover:bg-white hover:text-blue-600 transition">
+            <Link
+              href="/funcionalidades"
+              className="border border-white px-7 py-3 rounded-xl hover:bg-white hover:text-blue-600 transition"
+            >
               Ver Funcionalidades
-            </button>
+            </Link>
           </div>
         </div>
 
