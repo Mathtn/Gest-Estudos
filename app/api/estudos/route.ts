@@ -34,18 +34,20 @@ export async function POST(request: Request) {
       return NextResponse.json({ erro: "Não autorizado" }, { status: 401 });
     }
 
-    const { materia, dia, hora, descricao } = await request.json();
+    const { materia, dia, hora, descricao, duracao_minutos } =
+      await request.json();
 
     const { data, error } = await supabase
       .from("estudos")
       .insert([
-        { 
-          materia, 
-          dia, 
-          hora, 
-          descricao, 
-          usuario_id: usuarioId 
-        }
+        {
+          materia,
+          dia,
+          hora,
+          descricao,
+          duracao_minutos,
+          usuario_id: usuarioId,
+        },
       ])
       .select();
 
